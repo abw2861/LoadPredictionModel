@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 @st.cache_data
 def get_weather_data():
     #import weather data Houston, CST/CDT, 2017-01-01 to 2022-12-30
-    weather_data = pd.read_csv('datasets/HOU.csv',
+    weather_data = pd.read_csv('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/HOU.csv',
                             usecols=['valid','tmpf','dwpf','relh','p01i','sknt','feel'])
 
     # rename columns    
@@ -50,14 +50,14 @@ def get_weather_data():
 @st.cache_data
 def get_load_data():
     # import load archive data
-    load_2017 = pd.read_excel('datasets/Native_Load_2017.xlsx')
+    load_2017 = pd.read_excel('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/native_Load_2017.xlsx')
     load_2017.rename(columns={'Hour Ending' : 'HourEnding'}, inplace=True)
-    load_2018 = pd.read_excel('datasets/Native_Load_2018.xlsx')
-    load_2019 = pd.read_excel('datasets/Native_Load_2019.xlsx')
-    load_2020 = pd.read_excel('datasets/Native_Load_2020.xlsx')
-    load_2021 = pd.read_excel('datasets/Native_Load_2021.xlsx')
+    load_2018 = pd.read_excel('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/Native_Load_2018.xlsx')
+    load_2019 = pd.read_excel('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/Native_Load_2019.xlsx')
+    load_2020 = pd.read_excel('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/Native_Load_2020.xlsx')
+    load_2021 = pd.read_excel('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/Native_Load_2021.xlsx')
     load_2021.rename(columns={'Hour Ending' : 'HourEnding'}, inplace=True)
-    load_2022 = pd.read_excel('datasets/Native_Load_2022.xlsx')
+    load_2022 = pd.read_excel('https://github.com/abw2861/LoadPredictionModel/blob/main/datasets/Native_Load_2022.xlsx')
     load_2022.rename(columns={'Hour Ending': 'HourEnding'}, inplace=True)
 
     dataframes = [load_2017,load_2018, load_2019, load_2020, load_2021, load_2022]
