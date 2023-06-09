@@ -35,3 +35,13 @@ Navigate through the sidebar to enter weather values and receive a load predicti
 ‘Predictions’ page. Enter the values into the labelled fields, choose a date and a time, and select 
 ‘Get Prediction.’ To receive another prediction, simply type and select new values, and select 
 the ‘Get Prediction’ button again.
+
+### Home
+![image](https://github.com/abw2861/LoadPredictionModel/assets/103956143/2749e417-90ba-4e6c-9626-e5a872a10f1a)
+
+### Analysis
+![image](https://github.com/abw2861/LoadPredictionModel/assets/103956143/3ea92438-eb37-44be-8066-fa5565e0234f)
+
+### Predictions
+![image](https://github.com/abw2861/LoadPredictionModel/assets/103956143/2b05f48a-9fc8-4c6c-8d37-89eec39baecc)
+
