@@ -1,5 +1,5 @@
 ### Load Predicton Application Description
-This is my capstone project created with Streamlit. The application uses machine learning to predict energy load usage for the Texas Coastal grid area. 
+A Streamlit application using machine learning to predict energy load usage for the Texas Coastal grid area. This application was created for my Capstone project.
 I used an MLP Regressor Model fitted on weather and time features. The application allows the user to enter weather factors along with a specific date and time to receive a load prediction.
 The MAPE for this model was 8.113%.
 
